@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimercado</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        .carousel-item img {
+            max-height: 500px;
+            object-fit: cover;
+            width: 100%;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="bg-primary text-white text-center py-3 sticky-top">
+        <a href="/index.html" class="text-white mx-2"><h1>Minimercado</h1></a>
+        <nav>
+            <a href="produtos.html" class="text-white mx-2">Produtos</a>
+            <a href="/index.html" class="text-white mx-2">Serviços</a>
+            <a href="contato.html" class="text-white mx-2">Contato</a>
+            <a href="cadastro.html" class="text-white mx-2">Cadastro</a>
+        </nav>
+    </header>
+    <section id="cadastroCliente" class="mt-5">
+        <h2>Cadastro do Cliente</h2>
+        <form>
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+            </div>
+            <div class="mb-3">
+                <label for="endereco" class="form-label">Endereço</label>
+                <input type="text" class="form-control" id="endereco" placeholder="Digite seu endereço" required>
+            </div>
+            <div class="mb-3">
+                <label for="cpf" class="form-label">CPF</label>
+                <input type="text" class="form-control" id="cpf" placeholder="Digite seu CPF" required>
+            </div>
+            <div class="mb-3">
+                <label for="sexo" class="form-label">Sexo</label>
+                <div>
+                    <input type="radio" id="masculino" name="sexo" value="masculino">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="feminino" name="sexo" value="feminino">
+                    <label for="feminino">Feminino</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="telefone" class="form-label">Telefone</label>
+                <input type="tel" class="form-control" id="telefone" placeholder="Digite seu telefone" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
+            </div>
+            <div class="mb-3">
+                <label for="servico" class="form-label">Escolha do Serviço</label>
+                <select class="form-select" id="servico" required>
+                    <option selected disabled>Selecione uma opção</option>
+                    <option value="retirada">Retirada no Local</option>
+                    <option value="entrega">Tele-entrega</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="dataAgendamento" class="form-label">Data de Agendamento</label>
+                <input type="date" class="form-control" id="dataAgendamento" required>
+            </div>
+            <div class="mb-3">
+                <label for="horaAgendamento" class="form-label">Hora de Agendamento</label>
+                <input type="time" class="form-control" id="horaAgendamento" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+    </section>
+</main>
+
+<!-- Rodapé -->
+<footer class="bg-dark text-white text-center py-3 mt-5">
+    <p>&copy; 2024 Minimercado. Todos os direitos reservados.</p>
+    <nav>
+        <a href="produtos.html" class="text-white mx-2">Produtos</a>
+        <a href="/index.html" class="text-white mx-2">Serviços</a>
+        <a href="contato.html" class="text-white mx-2">Contato</a>
+    </nav>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
